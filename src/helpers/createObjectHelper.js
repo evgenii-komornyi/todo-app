@@ -32,9 +32,9 @@ export const createObject = (
                 id: generateID(),
                 item: item,
                 eventDate: {
-                    day: dateTime.getDate(),
-                    month: dateTime.getMonth(),
-                    year: dateTime.getFullYear(),
+                    day: date.getDate(),
+                    month: date.getMonth(),
+                    year: date.getFullYear(),
                 },
                 created: generateDate(),
                 completed: false,
