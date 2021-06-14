@@ -2,13 +2,15 @@ import styled, { css } from 'styled-components';
 import { motion } from 'framer-motion';
 import { getMonthName } from '../../helpers/dateHelper';
 
-const checkDateTime = (date, time = null, completed) => {
+const checkDateTime = (date = null, time = null, completed) => {
     const today = new Date();
 
     const eventDate = new Date(
-        `${date.year}-${getMonthName(date.month)}-${date.day}, ${
-            time !== null ? time.hours : '23'
-        }:${time !== null ? time.minutes : '59'}`
+        `${date && date.year}-${date && getMonthName(date.month)}-${
+            date && date.day
+        }, ${time !== null ? time.hours : '23'}:${
+            time !== null ? time.minutes : '59'
+        }`
     );
 
     const diffTime = Math.abs(today - eventDate);
@@ -30,7 +32,7 @@ const checkDateTime = (date, time = null, completed) => {
         `;
     } else {
         return css`
-            border: 1px solid #000;
+            border: ${date !== null ? '1px solid #000' : 'none'};
             border-radius: 10px;
         `;
     }
