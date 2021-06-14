@@ -26,4 +26,21 @@ export const GlobalStyle = createGlobalStyle`
     color: #222;
     overflow: hidden;
     }
+
+    .modal .modal-content {
+        background: linear-gradient(
+            190deg,
+            rgb(9, 90, 171) 0%,
+            rgb(0, 0, 0) 100%
+        );
+        color: #fff;
+    }
+
+    button.close {
+        background-color: transparent;
+        padding: 4px 10px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        color: #fff;
+    }
 `;
