@@ -2,7 +2,7 @@
 
 Todo Application is saving tasks into local storage and has expiration feature.
 
-
+![ToDoApp React Redux](https://komornyi.space/static/img/projects/git12.png)
 
 ### Technologies
 
