@@ -1,6 +1,6 @@
 # ToDo Application
 
-Todo Application which is saving tasks into local storage and has expiration feature.
+Todo Application is saving tasks into local storage and has expiration feature.
 
 ![ToDoApp React Redux](https://komornyi.space/static/img/projects/12.png)
 
