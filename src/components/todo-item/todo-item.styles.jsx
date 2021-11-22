@@ -81,7 +81,7 @@ export const ItemTimeContainer = styled.div``;
 export const ActionsContainer = styled.div`
     position: absolute;
     bottom: 1rem;
-    right: 1rem;
+    right: 0;
 
     button {
         border-radius: 20%;

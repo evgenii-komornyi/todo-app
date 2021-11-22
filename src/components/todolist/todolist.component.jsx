@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { connect } from 'react-redux';
 import {
     addTodos,
@@ -25,6 +25,10 @@ const DisplayTodos = ({ todos, completeTodo, updateTodo, removeTodo }) => {
 
     const completedTodos = todos.filter((item) => item.completed === true);
     const activeTodos = todos.filter((item) => item.completed === false);
+
+    useEffect(() => {
+        btnActiveRef.current.classList.add('active');
+    });
 
     const handleSortClick = (e, btn) => {
         setSort(btn);

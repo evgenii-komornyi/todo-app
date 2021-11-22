@@ -24,7 +24,6 @@ export const GlobalStyle = createGlobalStyle`
     background-size: cover;
     background-attachment: fixed;
     color: #222;
-    overflow: hidden;
     }
 
     .modal .modal-content {

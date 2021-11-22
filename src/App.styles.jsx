@@ -10,7 +10,6 @@ export const AppContainer = styled.div`
         text-align: center;
         margin-bottom: 2rem;
         color: #e1ebfd;
-
         text-shadow: 0 0 5px #433aa8, 3px -1px 5px #271c6c;
     }
 `;

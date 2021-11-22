@@ -35,6 +35,10 @@ export const ButtonMotion = styled(motion.button)`
     &:not(:last-child) {
         margin-right: 1rem;
     }
+
+    @media (max-width: 576px) {
+        padding: 2px;
+    }
 `;
 
 export const LengthContainer = styled.div`
@@ -58,11 +62,21 @@ export const ListContainer = styled.ul`
     flex-wrap: wrap;
     margin-left: 5%;
 
-    @media Screen and (max-width: 640px) {
-        display: flex;
+    @media screen and (min-width: 280px) and (max-width: 576px) {
+        flex-direction: column;
+        align-items: center;
+        margin-left: -6%;
+        align-self: center;
+    }
+
+    @media screen and (min-width: 577px) and (max-width: 667px) {
         flex-direction: column;
         align-items: center;
         margin-left: 0;
         align-self: center;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        margin-left: 10%;
     }
 `;
